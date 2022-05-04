@@ -1,5 +1,5 @@
 {
-  "type": "timing",
+  "type": "phase-detector",
   "name": "01",
   "arcPeriod": 60000,
   "timeStamp": 1646408271939,
@@ -43,27 +43,7 @@
     },
     "value": 0
   },
-  "on0": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -1,
-        "low": -1,
-        "high": 2,
-        "hihi": 2
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 1
-  },
-  "on1": {
+  "clrFb": {
     "action": "setting",
     "type": "scalar",
     "unit": "",
@@ -83,7 +63,87 @@
     },
     "value": 0
   },
-  "on2": {
+  "phaseLPFShift": {
+    "action": "setting",
+    "type": "scalar",
+    "unit": "",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 1,
+        "low": 2,
+        "high": 14,
+        "hihi": 15
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    },
+    "value": 10
+  },
+  "phaseTarget": {
+    "action": "setting",
+    "type": "scalar",
+    "unit": "degrees",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -181,
+        "low": -181,
+        "high": 181,
+        "hihi": 181
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    },
+    "value": 125
+  },
+  "sampleTime": {
+    "action": "setting",
+    "type": "scalar",
+    "unit": "uS",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 1,
+        "low":  1,
+        "high": 1000,
+        "hihi": 1000
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    },
+    "value": 500
+  },
+  "loadClkDelay": {
+    "action": "setting",
+    "type": "scalar",
+    "unit": "",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 1,
+        "low":  1,
+        "high": 20,
+        "hihi": 20
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    },
+    "value": 10
+  },
+  "fbMult": {
     "action": "setting",
     "type": "scalar",
     "unit": "",
@@ -91,9 +151,29 @@
       "value": 0,
       "limits": {
         "lolo": -1,
-        "low": -1,
-        "high": 2,
-        "hihi": 2
+        "low":  -1,
+        "high": 1,
+        "hihi": 1
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    },
+    "value": 0.4
+  },
+  "fbShiftL": {
+    "action": "setting",
+    "type": "scalar",
+    "unit": "",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -1,
+        "low":  -1,
+        "high": 10,
+        "hihi": 10
       },
       "notify": {
         "name": "",
@@ -102,206 +182,5 @@
       }
     },
     "value": 0
-  },
-  "on3": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -1,
-        "low": -1,
-        "high": 2,
-        "hihi": 2
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 0
-  },
-
-  "countMax": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 100000
-  },
-  "start0": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 1000
-  },
-  "stop0": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 2000
-  },
-  "start1": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 1000
-  },
-  "stop1": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 2000
-  },
-  "start2": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 1000
-  },
-  "stop2": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 2000
-  },
-  "start3": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 1000
-  },
-  "stop3": {
-    "action": "setting",
-    "type": "scalar",
-    "unit": "uS",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 10,
-        "low": 11,
-        "high": 15000000,
-        "hihi": 16000000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    },
-    "value": 2000
   }
 }
