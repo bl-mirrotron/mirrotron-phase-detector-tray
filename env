@@ -1,0 +1,7 @@
+MQTTSUBSCRIBE=mirrotron/phase-detector/01/setting/#
+MQTTCLIENTID=mirrotron-phase-detector-01
+MQTTSERVERIP=xxx
+MQTTUSERNAME=yyy
+MQTTPASSWORD=www
+PM2NAME=phase-detector-01
+NODEREDCONFIGSECRET=zzz

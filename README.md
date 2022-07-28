@@ -1,12 +1,14 @@
-# mirrotron-phase-detector-tray
-## need to add .env file with the following
-MQTTSUBSCRIBE=mirrotron/phase-detector/01/setting/#  
-MQTTCLIENTID=mirrotron-phase-detector-tray-01  
-MQTTSERVERIP=something.cloudmqtt.com  
-MQTTUSERNAME=xxxx  
-MQTTPASSWORD=yyyy  
-PM2NAME=phase-detector-01  
-NODEREDCONFIGSECRET=a-secret-key    
+## Four Quadrant IQ Phase Detector
+Stuff to write
+##### Figure 6 #####
+*Phase Detector Block Diagram*<br>
+![phase-detector diagam](doc/LLRF-Phase-Detector.png)
 
-with no CR after the last line
+##### Figure 7 #####
+*Phase Detector DSP Code*<br>
+![phase-detector dsp](doc/mirrotron-phase-detector.png)
+
+##### Figure 8 #####
+*Phase Detector Implementation*<br>
+![phase-detector impl](doc/phase-detector.jpg)
 
