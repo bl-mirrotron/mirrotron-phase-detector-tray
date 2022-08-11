@@ -1,7 +1,7 @@
 # Four Quadrant IQ Phase Detector
 * <a href="https://github.com/bl-mirrotron/mirrotron-phase-detector-tray" target="_blank">Source code</a>
 * [RF source overview](https://docs.bl-mirrotron.com/#rf-source)
-* [Control system overview](/)
+* [Control system overview](https://docs.bl-mirrotron.com/)
 
 The purpose of the phase detector is to measure the phase between the cavity drive and the cavity field and then send an error signal to the [RF frequency source](https://docs.bl-mirrotron.com/mirrotron-rf-src-tray/) so that the RF frequency source will track the cavity resonance as the cavity temperature changes. The RF circuitry for the phase detector is shown in Figure 1. The circuit compares the in phase and out of phase components of the RF drive with the cavity field and provides I channel and Q channel outputs.
 
