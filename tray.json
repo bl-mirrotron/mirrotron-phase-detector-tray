@@ -6,7 +6,7 @@
   "watchdog": {
     "action": "reading",
     "type": "scalar",
-    "value": 8492,
+    "value": 7702,
     "unit": "",
     "alarm": {
       "value": 0,
@@ -61,7 +61,7 @@
         "time": 0
       }
     },
-    "value": 0
+    "value": 1
   },
   "phaseLPFShift": {
     "action": "setting",
@@ -121,7 +121,7 @@
         "time": 0
       }
     },
-    "value": 500
+    "value": 101
   },
   "loadClkDelay": {
     "action": "setting",
